@@ -39,7 +39,7 @@
           - [Dictionary](#dictionary)
           - [Correspondence Relationship](#correspondence-relationship)
           - [Extra Information](#extra-information)
-       - [Other methods](#other-methods)
+        - [Other methods](#other-methods)
           - [Iterative](#iterative)
           - [Sparsity](#sparsity)
           - [Sparse Representations](#sparse-representations)
