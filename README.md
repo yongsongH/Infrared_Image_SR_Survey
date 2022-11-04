@@ -342,6 +342,18 @@ Optical technologies for the detection of viruses like COVID-19: Progress and pr
 }
 ```
 
+An infrared image denoising model with unidirectional gradient and sparsity constraint on biomedical images
+```
+@article{liu2022infrared,
+  title={An infrared image denoising model with unidirectional gradient and sparsity constraint on biomedical images},
+  author={Liu, Hai and An, Qing and Liu, Tingting and Huang, Zhenghua and Deng, Qian},
+  journal={Infrared Physics \& Technology},
+  volume={126},
+  pages={104348},
+  year={2022},
+  publisher={Elsevier}
+}
+```
 
 ### Cellular observations
 
@@ -444,6 +456,20 @@ Super-resolution imaging with mid-IR photothermal microscopy on the single parti
   pages={121--128},
   year={2015},
   organization={SPIE}
+}
+```
+
+Ultralong-Term Super-Resolution Tracking of Lysosomes in Brain Organoids by Near-Infrared Noble Metal Nanoclusters
+```
+@article{qiu2022ultralong,
+  title={Ultralong-Term Super-Resolution Tracking of Lysosomes in Brain Organoids by Near-Infrared Noble Metal Nanoclusters},
+  author={Qiu, Kangqiang and Yadav, Aditya and Tian, Zhiqi and Guo, Ziyuan and Shi, Donglu and Nandi, Chayan K and Diao, Jiajie},
+  journal={ACS Materials Letters},
+  volume={4},
+  number={9},
+  pages={1565--1573},
+  year={2022},
+  publisher={ACS Publications}
 }
 ```
 
@@ -1848,6 +1874,19 @@ Multimodal super-resolution reconstruction of infrared and visible images via de
   journal={Optics and Lasers in Engineering},
   volume={156},
   pages={107078},
+  year={2022},
+  publisher={Elsevier}
+}
+```
+
+Infrared and visible light dual-camera super-resolution imaging with texture transfer network
+```
+@article{wu2022infrared,
+  title={Infrared and visible light dual-camera super-resolution imaging with texture transfer network},
+  author={Wu, Yubin and Cheng, Lianglun and Wang, Tao and Wu, Heng},
+  journal={Signal Processing: Image Communication},
+  volume={108},
+  pages={116825},
   year={2022},
   publisher={Elsevier}
 }
