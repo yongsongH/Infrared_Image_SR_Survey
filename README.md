@@ -2251,6 +2251,71 @@ No-reference image quality assessment in the spatial domain
 }
 ```
 
+EO system design and performance optimization by image-based end-to-end modeling
+
+```
+@inproceedings{bijl2019eo,
+  title={EO system design and performance optimization by image-based end-to-end modeling},
+  author={Bijl, Piet and Hogervorst, MA},
+  booktitle={Infrared Imaging Systems: Design, Analysis, Modeling, and Testing XXX},
+  volume={11001},
+  pages={177--191},
+  year={2019},
+  organization={SPIE}
+}
+```
+
+A holistic approach to high performance infrared system design
+```
+@inproceedings{driggers2018holistic,
+  title={A holistic approach to high performance infrared system design},
+  author={Driggers, R and Vollmerhausen, R and Short, R and Littlejohn, D and Scholten, M},
+  booktitle={Infrared Technology and Applications XLIV},
+  volume={10624},
+  pages={58--67},
+  year={2018},
+  organization={SPIE}
+}
+```
+
+Progress in sensor performance testing, modeling and range prediction using the TOD method: an overview
+```
+@article{bijl2017progress,
+  title={Progress in sensor performance testing, modeling and range prediction using the TOD method: an overview},
+  author={Bijl, Piet and Hogervorst, Maarten A and Toet, Alexander},
+  journal={Infrared Imaging Systems: Design, Analysis, Modeling, and Testing XXVIII},
+  volume={10178},
+  pages={179--197},
+  year={2017},
+  publisher={SPIE}
+}
+```
+Target Acquisition performance: effects of target aspect angle, dynamic imaging and signal processing. In: Infrared Imaging Systems: Design, Analysis, Modeling, and Testing
+```
+@inproceedings{beintema2008target,
+  title={Target acquisition performance: effects of target aspect angle, dynamic imaging, and signal processing},
+  author={Beintema, Jaap A and Bijl, Piet and Hogervorst, Maarten A and Dijk, Judith},
+  booktitle={Infrared Imaging Systems: Design, Analysis, Modeling, and Testing XIX},
+  volume={6941},
+  pages={88--99},
+  year={2008},
+  organization={SPIE}
+}
+```
+
+ TOD predicts target acquisition performance for staring  and scanning thermal imagers
+ ```
+ @inproceedings{bijl2000tod,
+  title={TOD predicts target acquisition performance for staring and scanning thermal imagers},
+  author={Bijl, Piet and Valeton, J Mathieu and de Jong, Arie N},
+  booktitle={Infrared Imaging Systems: Design, Analysis, Modeling, and Testing XI},
+  volume={4030},
+  pages={96--103},
+  year={2000},
+  organization={SPIE}
+}
+```
+
 # Trends
 
 
