@@ -1,5 +1,5 @@
 
-# Infrared Image Super-Resolution: <br/> Systematic Review, and Future Trends
+# [Infrared Image Super-Resolution: <br/> Systematic Review, and Future Trends](https://arxiv.org/pdf/2212.12322)
 
 ![](https://github.com/yongsongH/Infrared_Image_SR_Survey/blob/main/fig2.png)
 ---
