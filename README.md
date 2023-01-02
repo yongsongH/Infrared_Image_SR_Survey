@@ -6,7 +6,12 @@
 
 - [1.Introduction](#1-introduction)
   - [1.1.Problem Definitions](#1-1-problem-definitions)
-  -  [1.2.Applications](#1-2-applications)
+- [2.Fundamentals of Infrared Images](#2-fundamentals-of-infrared-images)
+  - [2.1.Imaging System](#2-1-imaging-system)
+    - [Difficulties with the Lense](#2-1-1-difficulties-with-the-lense)
+    - [Difficulties with Sensors](#2-1-2-difficulties-with-sensors)
+    - [Difficulties with Processors](#2-1-3-difficulties-with-processors)
+  - [2.2 Applications](#2-2-applications)
      - [Medical biochemical engineering](#medical-biochemical-engineering)
         - [Pharmaceutical industry](#pharmaceutical-industry)
         - [Medical science](#medical-science) 
@@ -27,34 +32,29 @@
         - [Water resource management](#water-resource-management)
         - [Star formation](#star-formation) 
 
-- [2.Related Methods](#2-related-methods)
-  - [2.1.Imaging System](#2-1-imaging-system)
-    - [Difficulties with the Lense](#2-1-1-difficulties-with-the-lense)
-    - [Difficulties with Sensors](#2-1-2-difficulties-with-sensors)
-    - [Difficulties with Processors](#2-1-3-difficulties-with-processors)
-   - [2.2.Image Processing Methods](#2-2-image-processing-methods)
-      - [2.2.1.Traditional Methods](#2-2-1-traditional-methods)
-        - [Dictionary-based reconstruction methods](#2-2-1-dictionary-based-reconstruction-methods)
-          - [Patches](#patches)
+- [3.Related Methods](#4-related-methods)
+     - 3.1.Traditional Methods
+         - [Patches](#patches)
           - [Dictionary](#dictionary)
           - [Correspondence Relationship](#correspondence-relationship)
           - [Extra Information](#extra-information)
-        - [Other methods](#other-methods)
+          - [Other methods](#other-methods)
           - [Iterative](#iterative)
           - [Sparsity](#sparsity)
           - [Sparse Representations](#sparse-representations)
           - [Projection](#projection)
           - [Regularization](#regularization)
-     - [2.2.2.Deep learning](#2-2-2-deep-learning)
+         
+     - [3.2.Deep learning](#3-2-deep-learning)
         - [CNN & Traditional Methods](#cnn-and-traditional-methods)
         - [CNN & End-to-end models](#cnn-and-end-to-end-models)
         - [GAN based](#gan-based)
 
-- [3.Datasets & IQA](#3-datasets-and-iqa)
+- [4.Datasets & IQA](#4-datasets-and-iqa)
   - [Datasets](#datasets)
   - [IQA](#iqa)
       
-- [4.Trends](#trends)
+- [5.Trends](#5-trends)
   - [Diffusion model](#diffusion-model)
   - [Transformer](#transformer)
   - [Blind SR](#blind-sr)
@@ -262,8 +262,201 @@ Designing a practical degradation model for deep blind image super-resolution
   year={2021}
 }
 ```
+## 2 Fundamentals of Infrared Images
 
-### 1-2 Applications
+## 2-1 Imaging Systems
+
+### 2-1-1 Difficulties with the Lense
+
+Lens design
+```
+@book{laikin2018lens,
+  title={Lens design},
+  author={Laikin, Milton},
+  year={2018},
+  publisher={CRC Press}
+}
+```
+Compressive Hyperspectral Imaging and Super-resolution
+```
+@inproceedings{yuan2018compressive,
+  title={Compressive Hyperspectral Imaging and Super-resolution},
+  author={Yuan, Han and Yan, Fengxia and Chen, Xinmeng and Zhu, Jubo},
+  booktitle={2018 IEEE 3rd International Conference on Image, Vision and Computing (ICIVC)},
+  pages={618--623},
+  year={2018},
+  organization={IEEE}
+}
+```
+
+Dynamic laser speckle and applications
+```
+@book{rabal2018dynamic,
+  title={Dynamic laser speckle and applications},
+  author={Rabal, Hector J and Braga Jr, Roberto A},
+  year={2018},
+  publisher={CRC press}
+}
+```
+Image analysis and understanding using super resolution
+```
+@inproceedings{lee2007image,
+  title={Image analysis and understanding using super resolution},
+  author={Lee, Harry and Olson, Teresa and Manville, Drew and Cloud, Gene},
+  booktitle={Display Technologies and Applications for Defense, Security, and Avionics},
+  volume={6558},
+  pages={95--101},
+  year={2007},
+  organization={SPIE}
+}
+```
+Study of asymmetric or decentered multi-view designs for uncooled infrared imaging applications
+```
+@article{mas2020study,
+  title={Study of asymmetric or decentered multi-view designs for uncooled infrared imaging applications},
+  author={Mas, Adrien and Druart, Guillaume and De La Barri{\`e}re, Florence},
+  journal={Optics Express},
+  volume={28},
+  number={23},
+  pages={35216--35230},
+  year={2020},
+  publisher={Optical Society of America}
+}
+```
+Effectiveness assessment of signal processing in the presence of smear
+```
+@article{bijl2012effectiveness,
+  title={Effectiveness assessment of signal processing in the presence of smear},
+  author={Bijl, Piet and Beintema, Jaap A and van der Leden, Natasja and Dijk, Judith},
+  journal={Optical Engineering},
+  volume={51},
+  number={6},
+  pages={063205},
+  year={2012},
+  publisher={SPIE}
+}
+```
+### 2-1-2 Difficulties with Sensors
+
+Averaging Current Adjustment Technique for Reducing Pixel Resistance Variation in a Bolometer-Type Uncooled Infrared Image Sensor
+```
+@article{kim2018averaging,
+  title={Averaging Current Adjustment Technique for Reducing Pixel Resistance Variation in a Bolometer-Type Uncooled Infrared Image Sensor},
+  author={Kim, Sang-Hwan and Choi, Byoung-Soo and Lee, Jimin and Lee, Junwoo and Park, Jae-Hyoun and Lee, Kyoung-Il and Shin, Jang-Kyoo},
+  journal={Journal of Sensor Science and Technology},
+  volume={27},
+  number={6},
+  pages={357--361},
+  year={2018},
+  publisher={The Korean Sensors Society}
+}
+```
+Stripe noise removal for infrared image by minimizing difference between columns
+```
+@article{wang2016stripe,
+  title={Stripe noise removal for infrared image by minimizing difference between columns},
+  author={Wang, Shu-Peng},
+  journal={Infrared Physics \& Technology},
+  volume={77},
+  pages={58--64},
+  year={2016},
+  publisher={Elsevier}
+}
+```
+Super resolution infrared camera using single carbon nanotube photodetector
+```
+@inproceedings{chen2014super,
+  title={Super resolution infrared camera using single carbon nanotube photodetector},
+  author={Chen, Liangliang and Zhou, Zhanxin and Xi, Ning and Yang, Ruiguo and Song, Bo and Sun, Zhiyong and Su, Chengzhi},
+  booktitle={SENSORS, 2014 IEEE},
+  pages={1038--1041},
+  year={2014},
+  organization={IEEE}
+}
+```
+
+Near-infrared super resolution imaging with metallic nanoshell particle chain array
+```
+@article{kong2013near,
+  title={Near-infrared super resolution imaging with metallic nanoshell particle chain array},
+  author={Kong, Weijie and Cao, Pengfei and Zhang, Xiaoping and Cheng, Lin and Wang, Tao and Yang, Lili and Meng, Qingqing},
+  journal={Plasmonics},
+  volume={8},
+  number={2},
+  pages={835--842},
+  year={2013},
+  publisher={Springer}
+}
+```
+Signal conditioning algorithms for enhanced tactical sensor imagery
+```
+@inproceedings{schutte2003signal,
+  title={Signal conditioning algorithms for enhanced tactical sensor imagery},
+  author={Schutte, Klamer and de Lange, Dirk-Jan J and van den Broek, Sebastian P},
+  booktitle={Infrared Imaging Systems: Design, Analysis, Modeling, and Testing XIV},
+  volume={5076},
+  pages={92--100},
+  year={2003},
+  organization={SPIE}
+}
+```
+
+Effect of pixel active area shapes in microscanning based infrared super-resolution imaging
+```
+@inproceedings{ming2013effect,
+  title={Effect of pixel active area shapes in microscanning based infrared super-resolution imaging},
+  author={Ming-Jie, Sun and Kang-long, Yu and Zhi, Xiao},
+  booktitle={2013 Third International Conference on Instrumentation, Measurement, Computer, Communication and Control},
+  pages={909--912},
+  year={2013},
+  organization={IEEE}
+}
+```
+A sur-pixel scan method for super-resolution reconstruction
+```
+@article{sun2013pixel,
+  title={A sur-pixel scan method for super-resolution reconstruction},
+  author={Sun, Mingjie and Yu, Kanglong},
+  journal={Optik},
+  volume={124},
+  number={24},
+  pages={6905--6909},
+  year={2013},
+  publisher={Elsevier}
+}
+```
+
+Sub-wavelength resolution of MMW imaging systems using extremely inexpensive scanning Glow Discharge Detector (GDD) double row camera
+```
+@inproceedings{kopeika2012sub,
+  title={Sub-wavelength resolution of MMW imaging systems using extremely inexpensive scanning Glow Discharge Detector (GDD) double row camera},
+  author={Kopeika, NS and Abramovich, A and Levanon, A and Akram, A and Rozban, D and Yitzhaky, Y and Yadid-Pecht, O and Belenky, A},
+  booktitle={Passive and Active Millimeter-Wave Imaging XV},
+  volume={8362},
+  pages={127--134},
+  year={2012},
+  organization={SPIE}
+}
+```
+
+### 2-1-3 Difficulties with Processors
+
+Superresolution image reconstruction from a sequence of aliased imagery
+```
+@article{young2006superresolution,
+  title={Superresolution image reconstruction from a sequence of aliased imagery},
+  author={Young, S Susan and Driggers, Ronald G},
+  journal={Applied Optics},
+  volume={45},
+  number={21},
+  pages={5073--5085},
+  year={2006},
+  publisher={Optica Publishing Group}
+}
+```
+
+
+### 2-2 Applications
 
 ### Medical biochemical engineering
 
@@ -1103,205 +1296,8 @@ Evidence for ongoing star formation in the Carina nebula
 ```
 
 
+# 4 Related Methods
 
-
-# 2 Related Methods
-
-
-## 2-1 Imaging System
-
-### 2-1-1 Difficulties with the Lense
-
-Lens design
-```
-@book{laikin2018lens,
-  title={Lens design},
-  author={Laikin, Milton},
-  year={2018},
-  publisher={CRC Press}
-}
-```
-Compressive Hyperspectral Imaging and Super-resolution
-```
-@inproceedings{yuan2018compressive,
-  title={Compressive Hyperspectral Imaging and Super-resolution},
-  author={Yuan, Han and Yan, Fengxia and Chen, Xinmeng and Zhu, Jubo},
-  booktitle={2018 IEEE 3rd International Conference on Image, Vision and Computing (ICIVC)},
-  pages={618--623},
-  year={2018},
-  organization={IEEE}
-}
-```
-
-Dynamic laser speckle and applications
-```
-@book{rabal2018dynamic,
-  title={Dynamic laser speckle and applications},
-  author={Rabal, Hector J and Braga Jr, Roberto A},
-  year={2018},
-  publisher={CRC press}
-}
-```
-Image analysis and understanding using super resolution
-```
-@inproceedings{lee2007image,
-  title={Image analysis and understanding using super resolution},
-  author={Lee, Harry and Olson, Teresa and Manville, Drew and Cloud, Gene},
-  booktitle={Display Technologies and Applications for Defense, Security, and Avionics},
-  volume={6558},
-  pages={95--101},
-  year={2007},
-  organization={SPIE}
-}
-```
-Study of asymmetric or decentered multi-view designs for uncooled infrared imaging applications
-```
-@article{mas2020study,
-  title={Study of asymmetric or decentered multi-view designs for uncooled infrared imaging applications},
-  author={Mas, Adrien and Druart, Guillaume and De La Barri{\`e}re, Florence},
-  journal={Optics Express},
-  volume={28},
-  number={23},
-  pages={35216--35230},
-  year={2020},
-  publisher={Optical Society of America}
-}
-```
-Effectiveness assessment of signal processing in the presence of smear
-```
-@article{bijl2012effectiveness,
-  title={Effectiveness assessment of signal processing in the presence of smear},
-  author={Bijl, Piet and Beintema, Jaap A and van der Leden, Natasja and Dijk, Judith},
-  journal={Optical Engineering},
-  volume={51},
-  number={6},
-  pages={063205},
-  year={2012},
-  publisher={SPIE}
-}
-```
-### 2-1-2 Difficulties with Sensors
-
-Averaging Current Adjustment Technique for Reducing Pixel Resistance Variation in a Bolometer-Type Uncooled Infrared Image Sensor
-```
-@article{kim2018averaging,
-  title={Averaging Current Adjustment Technique for Reducing Pixel Resistance Variation in a Bolometer-Type Uncooled Infrared Image Sensor},
-  author={Kim, Sang-Hwan and Choi, Byoung-Soo and Lee, Jimin and Lee, Junwoo and Park, Jae-Hyoun and Lee, Kyoung-Il and Shin, Jang-Kyoo},
-  journal={Journal of Sensor Science and Technology},
-  volume={27},
-  number={6},
-  pages={357--361},
-  year={2018},
-  publisher={The Korean Sensors Society}
-}
-```
-Stripe noise removal for infrared image by minimizing difference between columns
-```
-@article{wang2016stripe,
-  title={Stripe noise removal for infrared image by minimizing difference between columns},
-  author={Wang, Shu-Peng},
-  journal={Infrared Physics \& Technology},
-  volume={77},
-  pages={58--64},
-  year={2016},
-  publisher={Elsevier}
-}
-```
-Super resolution infrared camera using single carbon nanotube photodetector
-```
-@inproceedings{chen2014super,
-  title={Super resolution infrared camera using single carbon nanotube photodetector},
-  author={Chen, Liangliang and Zhou, Zhanxin and Xi, Ning and Yang, Ruiguo and Song, Bo and Sun, Zhiyong and Su, Chengzhi},
-  booktitle={SENSORS, 2014 IEEE},
-  pages={1038--1041},
-  year={2014},
-  organization={IEEE}
-}
-```
-
-Near-infrared super resolution imaging with metallic nanoshell particle chain array
-```
-@article{kong2013near,
-  title={Near-infrared super resolution imaging with metallic nanoshell particle chain array},
-  author={Kong, Weijie and Cao, Pengfei and Zhang, Xiaoping and Cheng, Lin and Wang, Tao and Yang, Lili and Meng, Qingqing},
-  journal={Plasmonics},
-  volume={8},
-  number={2},
-  pages={835--842},
-  year={2013},
-  publisher={Springer}
-}
-```
-Signal conditioning algorithms for enhanced tactical sensor imagery
-```
-@inproceedings{schutte2003signal,
-  title={Signal conditioning algorithms for enhanced tactical sensor imagery},
-  author={Schutte, Klamer and de Lange, Dirk-Jan J and van den Broek, Sebastian P},
-  booktitle={Infrared Imaging Systems: Design, Analysis, Modeling, and Testing XIV},
-  volume={5076},
-  pages={92--100},
-  year={2003},
-  organization={SPIE}
-}
-```
-
-Effect of pixel active area shapes in microscanning based infrared super-resolution imaging
-```
-@inproceedings{ming2013effect,
-  title={Effect of pixel active area shapes in microscanning based infrared super-resolution imaging},
-  author={Ming-Jie, Sun and Kang-long, Yu and Zhi, Xiao},
-  booktitle={2013 Third International Conference on Instrumentation, Measurement, Computer, Communication and Control},
-  pages={909--912},
-  year={2013},
-  organization={IEEE}
-}
-```
-A sur-pixel scan method for super-resolution reconstruction
-```
-@article{sun2013pixel,
-  title={A sur-pixel scan method for super-resolution reconstruction},
-  author={Sun, Mingjie and Yu, Kanglong},
-  journal={Optik},
-  volume={124},
-  number={24},
-  pages={6905--6909},
-  year={2013},
-  publisher={Elsevier}
-}
-```
-
-Sub-wavelength resolution of MMW imaging systems using extremely inexpensive scanning Glow Discharge Detector (GDD) double row camera
-```
-@inproceedings{kopeika2012sub,
-  title={Sub-wavelength resolution of MMW imaging systems using extremely inexpensive scanning Glow Discharge Detector (GDD) double row camera},
-  author={Kopeika, NS and Abramovich, A and Levanon, A and Akram, A and Rozban, D and Yitzhaky, Y and Yadid-Pecht, O and Belenky, A},
-  booktitle={Passive and Active Millimeter-Wave Imaging XV},
-  volume={8362},
-  pages={127--134},
-  year={2012},
-  organization={SPIE}
-}
-```
-
-### 2-1-3 Difficulties with Processors
-
-Superresolution image reconstruction from a sequence of aliased imagery
-```
-@article{young2006superresolution,
-  title={Superresolution image reconstruction from a sequence of aliased imagery},
-  author={Young, S Susan and Driggers, Ronald G},
-  journal={Applied Optics},
-  volume={45},
-  number={21},
-  pages={5073--5085},
-  year={2006},
-  publisher={Optica Publishing Group}
-}
-```
-
-## 2-2 Image Processing Methods
-
-### 2-2-1 Traditional Methods
 
 An analysis of a robust super resolution algorithm for infrared imaging
 ```
@@ -1341,7 +1337,6 @@ An infrared image super-resolution reconstruction method based on compressive se
 ```
 
 
-### 2-2-1 dictionary-based reconstruction methods
 
 
 Super-resolution through neighbor embedding
@@ -1655,7 +1650,7 @@ Performance study on point target detection using super-resolution reconstructio
 }
 ```
 
-## 2-2-2 Deep learning
+## 4-2 Deep learning
 
 Accelerating the super-resolution convolutional neural network
 ```
@@ -2071,7 +2066,7 @@ Thermal image reconstruction using deep learning
 }
 
 ```
-# 3 Datasets and IQA
+# 4 Datasets and IQA
 
 ## Datasets
 
@@ -2316,7 +2311,7 @@ Target Acquisition performance: effects of target aspect angle, dynamic imaging 
 }
 ```
 
-# Trends
+# 5 Trends
 
 
 
