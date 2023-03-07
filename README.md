@@ -338,6 +338,20 @@ Effectiveness assessment of signal processing in the presence of smear
 ```
 ### 2-1-2 Difficulties with Sensors
 
+Multiblock compressed sensing imaging in real time
+```
+@article{李虎2023multiblock,
+  title={Multiblock compressed sensing imaging in real time},
+  author={李虎 and 刘雪峰 and 姚旭日 and 刘璠 and 窦申成 and 胡钛 and 翟光杰},
+  journal={Journal of Infrared and Millimeter Waves},
+  volume={42},
+  number={1},
+  pages={61--71},
+  year={2023}
+}
+
+```
+
 Averaging Current Adjustment Technique for Reducing Pixel Resistance Variation in a Bolometer-Type Uncooled Infrared Image Sensor
 ```
 @article{kim2018averaging,
@@ -704,6 +718,20 @@ Multimodal Sensor Fusion In Single Thermal image Super-Resolution
 ```
 
 ### Targets detection 
+
+An infrared image detection of power equipment based on super-resolution reconstruction and YOLOv4
+```
+@article{wu2022infrared,
+  title={An infrared image detection of power equipment based on super-resolution reconstruction and YOLOv4},
+  author={Wu, Junpeng and Li, Xianglei and Zhou, Yibo},
+  journal={The Journal of Engineering},
+  volume={2022},
+  number={10},
+  pages={1006--1016},
+  year={2022},
+  publisher={Wiley Online Library}
+}
+```
 
 YOLO-SASE: An Improved YOLO Algorithm for the Small Targets Detection in Complex Backgrounds
 ```
