@@ -11,7 +11,8 @@
     - [Difficulties with the Lense](#2-1-1-difficulties-with-the-lense)
     - [Difficulties with Sensors](#2-1-2-difficulties-with-sensors)
     - [Difficulties with Processors](#2-1-3-difficulties-with-processors)
-  - [2.2 Applications](#2-2-applications)
+  - [2.2 IR Image Synthesis Model](#2-2-ir-image-synthesis-model) 
+  - [2.3 Applications](#2-2-applications)
      - [Medical biochemical engineering](#medical-biochemical-engineering)
         - [Pharmaceutical industry](#pharmaceutical-industry)
         - [Medical science](#medical-science) 
@@ -468,9 +469,57 @@ Superresolution image reconstruction from a sequence of aliased imagery
   publisher={Optica Publishing Group}
 }
 ```
+### 2-2 IR Image Synthesis Model
 
+An infrared image synthesis model based on infrared physics and heat transfer
+```
+@article{yu1998infrared,
+  title={An infrared image synthesis model based on infrared physics and heat transfer},
+  author={Yu, Weijie and Peng, Qunsheng and Tu, Hongming and Wang, Zhangye},
+  journal={International journal of infrared and millimeter waves},
+  volume={19},
+  pages={1661--1669},
+  year={1998},
+  publisher={Springer}
+}
+```
+Integrated modelling of thermal and visual image generation
+```
+@inproceedings{oh1989integrated,
+  title={Integrated modelling of thermal and visual image generation},
+  author={Oh, Chanhee and Nandhakumar, Nagaraj and Aggarwal, Jake K},
+  booktitle={1989 IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+  pages={356--357},
+  year={1989},
+  organization={IEEE Computer Society}
+}
+```
+Unified modeling of non-homogeneous 3D objects for thermal and visual image synthesis
+```
+@article{nandhakumar1994unified,
+  title={Unified modeling of non-homogeneous 3D objects for thermal and visual image synthesis},
+  author={Nandhakumar, Nagaraj and Karthik, Sankaran and Aggarwal, Jake K},
+  journal={Pattern recognition},
+  volume={27},
+  number={10},
+  pages={1303--1316},
+  year={1994},
+  publisher={Elsevier}
+}
+```
+Simulation of reticle seekers using the generated thermal images
+```
+@inproceedings{hong1996simulation,
+  title={Simulation of reticle seekers using the generated thermal images},
+  author={Hong, Hyun-Ki and Han, Sung-Hyun and Hong, Gyoung-Pyo and Choi, Jong-Soo},
+  booktitle={Proceedings of APCCAS'96-Asia Pacific Conference on Circuits and Systems},
+  pages={183--186},
+  year={1996},
+  organization={IEEE}
+}
+```
 
-### 2-2 Applications
+### 2-3 Applications
 
 ### Medical biochemical engineering
 
