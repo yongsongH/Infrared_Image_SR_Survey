@@ -2072,7 +2072,15 @@ Infrared image super-resolution reconstruction by using generative adversarial n
   publisher={Springer}
 }
 ```
-
+LATIS: Lambda Abstraction-based Thermal Image Super-resolution
+```
+@article{panda2023latis,
+  title={LATIS: Lambda Abstraction-based Thermal Image Super-resolution},
+  author={Panda, Gargi and Kundu, Soumitra and Bhattacharya, Saumik and Routray, Aurobinda},
+  journal={arXiv preprint arXiv:2311.12046},
+  year={2023}
+}
+```
 
 Multimodal sensor fusion in single thermal image super-resolution
 ```
