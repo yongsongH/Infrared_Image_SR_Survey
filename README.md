@@ -2072,6 +2072,17 @@ Infrared image super-resolution reconstruction by using generative adversarial n
   publisher={Springer}
 }
 ```
+Target-oriented Domain Adaptation for Infrared Image Super-Resolution
+```
+@article{huang2023target,
+  title={Target-oriented Domain Adaptation for Infrared Image Super-Resolution},
+  author={Huang, Yongsong and Miyazaki, Tomo and Liu, Xiaofeng and Dong, Yafei and Omachi, Shinichiro},
+  journal={arXiv preprint arXiv:2311.08816},
+  year={2023}
+}
+```
+
+
 LATIS: Lambda Abstraction-based Thermal Image Super-resolution
 ```
 @article{panda2023latis,
