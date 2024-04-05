@@ -768,6 +768,19 @@ Multimodal Sensor Fusion In Single Thermal image Super-Resolution
 
 ### Targets detection 
 
+Deeplab-YOLO: a method for detecting hot-spot defects in infrared image PV panels by combining segmentation and detection
+```
+@article{lei2024deeplab,
+  title={Deeplab-YOLO: a method for detecting hot-spot defects in infrared image PV panels by combining segmentation and detection},
+  author={Lei, Ye and Wang, Xiaoye and An, Aimin and Guan, Haijiao},
+  journal={Journal of Real-Time Image Processing},
+  volume={21},
+  number={2},
+  pages={1--11},
+  year={2024},
+  publisher={Springer}
+}
+```
 An infrared image detection of power equipment based on super-resolution reconstruction and YOLOv4
 ```
 @article{wu2022infrared,
