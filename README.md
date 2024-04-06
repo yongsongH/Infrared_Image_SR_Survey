@@ -1815,6 +1815,19 @@ Deep networks with detail enhancement for infrared image super-resolution
 
 ### CNN and End-to-end models
 
+Lightweight dynamic attention network for single thermal image super-resolution
+```
+@article{zhang_hu_2023,
+title={Lightweight dynamic attention network for single thermal image super-resolution}, 
+url={https://link.springer.com/article/10.1007/s11760-023-02886-4}, 
+DOI={https://doi.org/10.1007/s11760-023-02886-4}, 
+journal={Signal, image and video processing (Print)}, 
+publisher={Springer Science+Business Media}, 
+author={Zhang, Haikun and Hu, Yueli}, year={2023}, 
+month={Dec} }
+```
+‌
+
 Super-resolution reconstruction of infrared images based on a convolutional neural network with skip connections
 ```
 @article{zou2021super,
