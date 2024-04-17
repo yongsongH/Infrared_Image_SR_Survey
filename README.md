@@ -744,6 +744,16 @@ Super-resolution Thermal Generative Adversarial Networks for Infrared Image Enha
 ```
 ### Multispectral matching 
 
+XoFTR: Cross-modal Feature Matching Transformer
+```
+@misc{tuzcuoğlu_köksal_sofu_kalkan_aydın_2024,
+title={XoFTR: Cross-modal Feature Matching Transformer},
+url={https://arxiv.org/abs/2404.09692},
+journal={arXiv.org},
+author={Tuzcuoğlu, Önder and Köksal, Aybora and Sofu, Buğra and Kalkan, Sinan and Aydın, Alatan A},
+year={2024} }
+```
+
 Multispectral Matching using Conditional Generative Appearance Modeling
 ```
 @article{Bodensteiner2018MultispectralMU,
