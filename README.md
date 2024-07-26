@@ -2198,6 +2198,18 @@ Thermal image reconstruction using deep learning
 }
 
 ```
+PIRN: Phase Invariant Reconstruction Network for infrared image super-resolution
+```
+@article{dan2024pirn,
+  title={PIRN: Phase Invariant Reconstruction Network for infrared image super-resolution},
+  author={Dan, Jun and Jin, Tao and Chi, Hao and Liu, Mushui and Yu, Jiawang and Cao, Keying and Yang, Xinjing and Zhao, Luo and Xie, Haoran},
+  journal={Neurocomputing},
+  pages={128221},
+  year={2024},
+  publisher={Elsevier}
+}
+
+```
 # 4 Datasets and IQA
 
 ## Datasets
@@ -2586,6 +2598,15 @@ ViTGAN: Training GANs with Vision Transformers
   author={Lee, Kwonjoon and Chang, Huiwen and Jiang, Lu and Zhang, Han and Tu, Zhuowen and Liu, Ce},
   booktitle={International Conference on Learning Representations},
   year={2021}
+}
+```
+IRSRMamba: Infrared Image Super-Resolution via Mamba-based Wavelet Transform Feature Modulation Model
+```
+@article{huang2024irsrmamba,
+  title={IRSRMamba: Infrared Image Super-Resolution via Mamba-based Wavelet Transform Feature Modulation Model},
+  author={Huang, Yongsong and Miyazaki, Tomo and Liu, Xiaofeng and Omachi, Shinichiro},
+  journal={arXiv preprint arXiv:2405.09873},
+  year={2024}
 }
 ```
 ## Blind SR
