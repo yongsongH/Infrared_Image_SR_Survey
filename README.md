@@ -1,7 +1,24 @@
 
-# [Infrared Image Super-Resolution: <br/> Systematic Review, and Future Trends](https://arxiv.org/pdf/2212.12322)
+# [Infrared Image Super-Resolution: <br/> Systematic Review, and Future Trends](https://ieeexplore.ieee.org/document/11181143)
 
 ![](https://github.com/yongsongH/Infrared_Image_SR_Survey/blob/main/fig3.3.png)
+
+>- **🚩Accepted by IEEE JSTARS 💡 If you found this helpful, please consider [citing our work](#citation)! Thank you!**
+
+<a id="citation"></a>
+## Citation
+
+```
+@ARTICLE{11181143,
+  author={Huang, Yongsong and Miyazaki, Tomo and Liu, Xiaofeng and Omachi, Shinichiro},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
+  title={Infrared Image Super-Resolution: A Systematic Review and Future Trends}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-26},
+  doi={10.1109/JSTARS.2025.3614673}}
+```
 ---
 
 - [1.Introduction](#1-introduction)
